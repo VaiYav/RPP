@@ -1,7 +1,7 @@
 ## Build Setup
 
 ``` bash
-![](https://github.com/ArchieMollaev/a-levelGroup/raw/master/images/fresh_image.jpg)
+![](https://github.com/VaiYav/RPP/raw/master/images/fresh_image.jpg)
 
 # install dependencies
 npm install
