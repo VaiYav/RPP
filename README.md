@@ -1,7 +1,8 @@
+![](https://github.com/VaiYav/RPP/raw/master/images/fresh.png)
+
 ## Build Setup
 
 ``` bash
-![](https://github.com/VaiYav/RPP/raw/master/images/fresh.png)
 
 # install dependencies
 npm install
