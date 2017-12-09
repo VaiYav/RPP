@@ -10,7 +10,7 @@
                     <div class="title-slide"><a href="" class="date"><h3 class="month">Dec</h3> <p class="days">{{ blogPost.date }}</p></a> <a href="#" class="title"><h3>{{ blogPost.title }}</h3></a></div>
                     <p class="content-large">{{ blogPost.description }}</p>
                     <div class="read-more-container">
-                        <router-link :to="{name: 'post', params: {id: blogPost.id}}" class="post-read-more-button">Read More</router-link>
+                        <a href="#/post/{{blogPost.id}}" class="post-read-more-button">Read More</a>
                     </div>
                 </div>
             </div>
@@ -23,7 +23,7 @@
                     ng-click="incrementCurrent()"
                     class="paginator__arrow arrowLeft"
                     ng-class="{ 'disabled': newCurrent < 2 }">&lsaquo;</li>
-                <li ng-repeat="link in links()"
+                <li ng-repeat="link in links() track by $index"
                     class="paginator__link"
                     ng-class="{ 'current': localCurrent() === links() }"
                     ng-click="changeCurrent(link)"

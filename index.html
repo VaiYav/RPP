@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>AngularJS</title>
-	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/node_modules/angular-material/angular-material.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
@@ -13,14 +13,13 @@
 		<nav>
 			<ul>
 				<li><a href="/">Main</a></li>
-				<li><a href="/blog">Blog</a></li>
+				<li><a href="#/blog">Blog</a></li>
 
 			</ul>
 		</nav>
-		<ng-view></ng-view>
+		<div ng-view></div>
 	
 	</div>
-
 	<script src="/bundle.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 export default function routerSettings($routeProvider, $locationProvider) {
-	// $locationProvider.hashPrefix('')
+	$locationProvider.hashPrefix('')
 	$routeProvider
 	.when('/', {
 		templateUrl: 'js/views/main.html'
@@ -7,9 +7,13 @@ export default function routerSettings($routeProvider, $locationProvider) {
 	.when('/blog', {
 		templateUrl: 'js/views/blog.html',
 		controller:'Blog'
+	})
+	.when('/post/:id', {
+		templateUrl: 'js/views/post.html',
+		controller: 'Post'
 	});
-	$locationProvider.html5Mode({
-	  enabled: true,
-	  requireBase: false
-	});
+	// $locationProvider.html5Mode({
+	//   enabled: true,
+	//   requireBase: true
+	// });
 };
