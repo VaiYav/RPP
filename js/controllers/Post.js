@@ -1,4 +1,3 @@
-import '../../css/post.scss';
 export default function Post($scope, $routeParams, BlogApi) {
     let postId = $routeParams.id;
     $scope.imgDefault = 'https://cdn.browshot.com/static/images/not-found.png';
