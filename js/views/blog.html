@@ -1,9 +1,39 @@
-<div>
-    It is Blog!
-    <pagination
-        amountPages="paginationPageLength"
-        paginationLinks="3"
-        currentPage="currentPage"
-        ng-click="getNewPage">
-    </pagination>
+<div class="section-content">
+    <div class="post-container">
+        <div class="recent-post-container" ng-repeat="blogPost in blog track by $index">
+            <div class="img-container">
+                <!--<img src="http://premiumwpblogthemes.com/wp/waverly/wp-content/uploads/sites/6/2017/09/paul-3-500x667.jpg">-->
+            </div>
+            <div class="post-body">
+                <div class="post-category-wrapper">
+                    <div class="category-container"><a href="#">Lorem</a></div>
+                    <div class="title-slide"><a href="" class="date"><h3 class="month">Dec</h3> <p class="days">{{ blogPost.date }}</p></a> <a href="#" class="title"><h3>{{ blogPost.title }}</h3></a></div>
+                    <p class="content-large">{{ blogPost.description }}</p>
+                    <div class="read-more-container">
+                        <router-link :to="{name: 'post', params: {id: blogPost.id}}" class="post-read-more-button">Read More</router-link>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ng-controller="Pagination">
+        <div class="paginator">
+            <ul class="paginator__list">
+                <li
+                    ng-click="incrementCurrent()"
+                    class="paginator__arrow arrowLeft"
+                    ng-class="{ 'disabled': newCurrent < 2 }">&lsaquo;</li>
+                <li ng-repeat="link in links()"
+                    class="paginator__link"
+                    ng-class="{ 'current': localCurrent() === links() }"
+                    ng-click="changeCurrent(link)"
+                    >{{ link }}</li>
+                <li
+                    ng-click="dicrementCurrent()"
+                    ng-class="{ disabled: newCurrent === paginationPageLength() }"
+                    class="paginator__arrow arrowRight">&rsaquo;</li>
+            </ul>
+            <div>{{ localCurrent() }} from {{ paginationPageLength() }}</div>
+        </div>
+    </div>
 </div>
