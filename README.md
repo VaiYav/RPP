@@ -1,7 +1,7 @@
 ## Build Setup
 
 ``` bash
-![](https://dcassetcdn.com/design_img/27450/33893/33893_592098_27450_image.jpg)
+![](https://github.com/ArchieMollaev/a-levelGroup/raw/master/images/fresh_image.jpg)
 
 # install dependencies
 npm install
