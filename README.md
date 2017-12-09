@@ -1,8 +1,9 @@
 ![](https://github.com/VaiYav/RPP/raw/master/images/fresh.png)
 
-## Build Setup
+## Daily-Formula
 
 ``` bash
+HOW TO BUILD
 
 # install dependencies
 npm install
@@ -16,5 +17,5 @@ npm build
 # for run json-server you need install it
 npm install -g json-server
 
-# Run json-server command
+# run json-server command:
 json-server db.json -w
