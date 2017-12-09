@@ -12,3 +12,6 @@ npm build
 
 # for run json-server you need install it
 npm install -g json-server
+
+# Run json-server command
+json-server db.json -w
