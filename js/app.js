@@ -14,4 +14,3 @@ angular.module('application', ['ngRoute'])
  .controller('Blog', ['$scope', 'blogApi', BlogModule.blog])
  .controller('Pagination', ['$scope', BlogModule.pagination])
  .controller('Post', ['$scope', '$routeParams', 'blogApi', BlogModule.post])
-

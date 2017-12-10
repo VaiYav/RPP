@@ -12,6 +12,10 @@ export default function routerSettings($routeProvider, $locationProvider) {
 		templateUrl: 'js/views/blogViews/post.html',
 		controller: 'Post'
 	})
+	.when('/blog/:id', {
+		templateUrl: 'js/views/blogViews/blog.html',
+		controller: 'Blog'
+	})
 	$locationProvider.html5Mode({
 	  enabled: true,
 	  requireBase: false

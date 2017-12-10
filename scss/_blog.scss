@@ -339,11 +339,11 @@ h2{
 }
 .paginator{
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   max-width: 1060px;
   margin: 2rem auto;
+  justify-content: center;
   &__list{
     list-style: none;
     li{
