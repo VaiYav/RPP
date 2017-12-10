@@ -19,8 +19,8 @@
             </div>
         </div>
         <div class="main-container">
-            <div :class="['share-box', {attachment: attach}]">
-                <div class="social-links" ng-class="{active: fixedSocial, attachment: attach}">
+            <div ng-class="{'attachment': attach === true}" class="share-box">
+                <div class="social-links" ng-class="{'active': fixedSocial === true, 'attachment': attach === true}">
                     <div class="social-container">
                         <h6 class="title">Share this</h6>
                         <ul class="share-container">
