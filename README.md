@@ -1,21 +1,23 @@
 ![](https://github.com/VaiYav/RPP/raw/master/images/fresh.png)
 
-## Daily-Formula
+## HOW TO START PROJECT DEVELOPMENT
 
 ``` bash
-HOW TO BUILD
 
-# install dependencies
+#1. Install dependencies:
 npm install
 
-# serve with hot reload at localhost:8080
-npm start
-
-# build for production with minification
-npm build
-
-# for run json-server you need install it
+#2. Install json-server:
 npm install -g json-server
 
-# run json-server command:
+#3. Run json-server on db.json file:
 json-server db.json -w
+
+#4. Run webpak-dev-server:
+npm start
+
+
+
+
+
+
