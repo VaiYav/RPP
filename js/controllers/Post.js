@@ -6,8 +6,8 @@ export default function Post($scope, $routeParams, BlogApi) {
     $scope.attach = false;
     $scope.attachSocialBlock = function () {
         let socialContainerHeight = document.querySelector('.social-links').offsetHeight
-        this.fixedSocial = window.pageYOffset > 500
-        this.attach = window.pageYOffset > 1430 - socialContainerHeight
+        $scope.fixedSocial = window.pageYOffset > 500
+        $scope.attach = window.pageYOffset > 1200 - socialContainerHeight
     }
     $scope.GETPost = function () {
         BlogApi.getPost(postId)
@@ -20,7 +20,7 @@ export default function Post($scope, $routeParams, BlogApi) {
         window.addEventListener('scroll', $scope.attachSocialBlock)
     }
     $scope.GETPost()
-    $scope.$onDestroy = function () {
+    this.$onDestroy = function () {
         window.removeEventListener('scroll', $scope.attachSocialBlock)
     };
 }
