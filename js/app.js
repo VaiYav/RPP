@@ -8,6 +8,7 @@ import routerSettings from 'app.router.config';
 import blogApi from 'api/blogapi'
 import 'angular-aria'
 import 'angular-animate'
+import 'angular-messages'
 import 'angular-material'
 // var angular = require('angular');
 // var ngRoute = require('angular-route');
