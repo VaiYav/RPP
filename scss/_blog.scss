@@ -781,7 +781,7 @@ button.is-success {
     -webkit-backface-visibility: hidden;
     transform: scaleX( 0 );
     transform-origin: right;
-    transition: transform 0.7s cubic-bezier( 0.19, 1, 0.22, 1 );
+    transition: transform 1.7s cubic-bezier( 0.19, 1, 0.22, 1 );
   }
   a{
     &:hover{
