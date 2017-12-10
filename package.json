@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "json-server -w db.json & webpack-dev-server",
     "build": "webpack"
   },
   "author": "",

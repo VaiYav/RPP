@@ -2,12 +2,17 @@
     <div class="post-container" layout="row" layout-align="center center">
         <div class="recent-post-container" ng-repeat="blogPost in blog track by $index">
             <div class="img-container">
-                <!--<img src="http://premiumwpblogthemes.com/wp/waverly/wp-content/uploads/sites/6/2017/09/paul-3-500x667.jpg">-->
+                <a href="#" class="category-container">
+                    <span>Lorem</span>
+                    <img src="http://premiumwpblogthemes.com/wp/waverly/wp-content/uploads/sites/6/2017/09/paul-3-500x667.jpg">
+                </a>
             </div>
             <div class="post-body">
                 <div class="post-category-wrapper">
-                    <div class="category-container"><a href="#">Lorem</a></div>
-                    <div class="title-slide"><a href="" class="date"><h3 class="month">Dec</h3> <p class="days">{{ blogPost.date }}</p></a> <a href="#" class="title"><h3>{{ blogPost.title }}</h3></a></div>
+                    <div class="title-slide">
+                        <a href="#" class="title"><h3>{{ blogPost.title }}</h3></a>
+                        <a href="" class="date"><h3 class="month">Dec</h3> <p class="days">{{ blogPost.date }}</p></a>
+                    </div>
                     <p class="content-large">{{ blogPost.description }}</p>
                     <div class="read-more-container">
                         <a href="#/post/{{blogPost.id}}" class="post-read-more-button">Read More</a>
