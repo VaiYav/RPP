@@ -4,7 +4,7 @@ module.exports = {
       extensions: [".js"],
       modules: [
          "./js",
-         "./js/controllers",
+         "./js/components",
          "./node_modules"
       ]
    },
